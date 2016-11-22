@@ -1,0 +1,32 @@
+<h1>Juego de {{player}}</h1>
+
+     <table class ="table">
+            <thread>
+               <tr>
+                    <th>words</th>
+                    <th>action</th>
+               </tr>
+
+             </thread>
+            
+            <tbody>
+                   
+                   <tr > 
+                       
+                        <td>
+                            <form ng-submit="addWord()"> 
+                            <input class="form-control" ng-model="newWord"> 
+                            </form>
+                        </td> 
+                        <td><button class="btn btn-primary" ng-click="addWord()">Add</button></td>
+                        
+                    </tr>
+
+                    <tr ng-repeat="word in words"> 
+                        <td>{{word}}</td>
+                        <td>{{score}}</td>
+                    </tr>
+            </tbody>
+     
+    
+     </table>
